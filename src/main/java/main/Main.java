@@ -7,18 +7,13 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        CapriciosaPizza capriciosaPizza = new CapriciosaPizza();
-        HawaiPizza hawaiPizza = new HawaiPizza();
+        CapriciosaPizza capriciosaPizza = new CapriciosaPizza(31.99,Arrays.asList("cheese","champignons","ham"));
+        HawaiPizza hawaiPizza = new HawaiPizza(29.99,Arrays.asList("cheese","pineaple","ham"));
+        MargheritaPizza margheritaPizza = new MargheritaPizza(24, Arrays.asList("cheese"));
 
         capriciosaPizza.showPizzaInfo();
         hawaiPizza.showPizzaInfo();
-
-        PizzaFactory pizzaZam1 = new PizzaFactory();
-        Pizza pizza1Stolik11 =pizzaZam1.cretepizza(PizzaBrand.MARGERITTA
-                ,34, Arrays.asList("chess"));
-        Pizza pizza1Stolik15 = pizzaZam1.cretepizza(PizzaBrand.HAWAI
-                ,34, Arrays.asList("anans","ham","chees"));
-
+        margheritaPizza.showPizzaInfo();
     }
 
 }
