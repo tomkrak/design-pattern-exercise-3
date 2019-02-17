@@ -10,6 +10,7 @@ public class Main {
         CapriciosaPizza capriciosaPizza = new CapriciosaPizza(31.99,Arrays.asList("cheese","champignons","ham"));
         HawaiPizza hawaiPizza = new HawaiPizza(29.99,Arrays.asList("cheese","pineaple","ham"));
         MargheritaPizza margheritaPizza = new MargheritaPizza(24, Arrays.asList("cheese"));
+        DecoroPizza decoroPizza = new DecoroPizza(34, Arrays.asList("ham", "champignons", "pepper", "onion"));
 
         capriciosaPizza.showPizzaInfo();
         hawaiPizza.showPizzaInfo();
